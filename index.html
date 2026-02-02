@@ -6,41 +6,51 @@
     <title>AccLock: Unlocking Identity with Heartbeat Using In-Ear Accelerometers</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #f0f2f5;
+            background-color: #ffffff;
+            padding-top: 60px;
+            color: #24292e;
         }
         .container {
-            max-width: 800px;
-            width: 90%;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 960px;
+            width: 100%;
+            padding: 0 20px;
             text-align: center;
         }
         video {
             width: 100%;
-            max-width: 100%;
+            max-width: 900px;
             height: auto;
-            border-radius: 8px;
-            margin-top: 15px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background-color: #000;
         }
-        h1 {
-            color: #333;
-            margin: 0 0 10px 0;
-            font-size: 1.5rem;
+        /* 论文标题样式：加大加粗 */
+        .title {
+            color: #111;
+            margin: 0 auto 15px auto;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.25;
+            max-width: 800px;
+        }
+        /* 项目代号/副标题 */
+        .subtitle {
+            color: #586069;
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin: 0 0 30px 0;
         }
         p {
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 15px;
+            color: #586069;
+            font-size: 0.95rem;
+            margin-top: 25px;
         }
         a {
             color: #0366d6;
@@ -49,18 +59,27 @@
         a:hover {
             text-decoration: underline;
         }
+        .code-text {
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+            background-color: #f6f8fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>AccLock</h1>
-        <h2 style="color: #555; font-size: 1.1rem; font-weight: normal; margin: 0 0 20px 0;">Unlocking Identity with Heartbeat Using In-Ear Accelerometers</h2>
+        <!-- 论文题目置顶，加大加粗 -->
+        <h1 class="title">Unlocking Identity with Heartbeat Using In-Ear Accelerometers</h1>
+        <!-- 项目代号 -->
+        <div class="subtitle">AccLock</div>
+        
         <video controls preload="metadata">
             <source src="DEMO.mp4" type="video/mp4">
             Your browser does not support HTML5 video. <a href="DEMO.mp4">Download the video</a> to watch.
         </video>
         <p>
-            File: DEMO.mp4 <br>
+            Demo Video File: <span class="code-text">DEMO.mp4</span> <br>
             <a href="DEMO.mp4" download>Download Video</a>
         </p>
     </div>
